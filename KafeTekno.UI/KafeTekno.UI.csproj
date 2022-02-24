@@ -113,5 +113,11 @@
   <ItemGroup>
     <None Include="Resources\dolu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KafeTekno.DATA\KafeTekno.DATA.csproj">
+      <Project>{76dd2d97-f2fe-419e-a9b3-90233a555f3e}</Project>
+      <Name>KafeTekno.DATA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
