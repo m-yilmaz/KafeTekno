@@ -17,8 +17,8 @@ namespace KafeTekno.UI
 
         public GecmisSiparislerForm(KafeVeri db)
         {
-            InitializeComponent();
             _db = db;
+            InitializeComponent();
             dgvSiparisler.DataSource = _db.GecmisSiparisler;
         }
 

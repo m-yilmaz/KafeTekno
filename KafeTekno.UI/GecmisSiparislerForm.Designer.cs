@@ -73,7 +73,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSiparisler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSiparisler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvSiparisler.ColumnHeadersVisible = false;
             this.dgvSiparisler.Location = new System.Drawing.Point(4, 43);
             this.dgvSiparisler.MultiSelect = false;
             this.dgvSiparisler.Name = "dgvSiparisler";
@@ -103,7 +102,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSiparisDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSiparisDetaylar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvSiparisDetaylar.ColumnHeadersVisible = false;
             this.dgvSiparisDetaylar.Location = new System.Drawing.Point(4, 38);
             this.dgvSiparisDetaylar.MultiSelect = false;
             this.dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
@@ -130,6 +128,7 @@
             this.ClientSize = new System.Drawing.Size(865, 530);
             this.Controls.Add(this.splitContainer1);
             this.Name = "GecmisSiparislerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Geçmiş Siparişler";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
