@@ -57,9 +57,33 @@ namespace KafeTekno.UI
             int masaNo = (int)lvi.Tag;
             //MessageBox.Show(masaNo.ToString());
             Siparis siparis = SiparisBulYadaOlustur(masaNo);
-            new SiparisForm(db,siparis).ShowDialog();
+            SiparisForm sf = new SiparisForm(db, siparis);
+            sf.MasaTasindi += Sf_MasaTasindi;
+            sf.ShowDialog();
             if (siparis.Durum != SiparisDurum.Aktif)
                 lvi.ImageKey = "bos";
+        }
+
+        private void Sf_MasaTasindi(object sender, MasaTasindiEventArgs e)
+        {
+            MasaTasi(e.EskiMasaNo, e.YeniMasaNo);
+        }
+
+        private void MasaTasi(int eskiMasaNo, int yeniMasaNo)
+        {
+            foreach (ListViewItem lvi in lvwMasalar.Items)
+            {
+                if ((int)lvi.Tag == eskiMasaNo)
+                {
+                    lvi.ImageKey = "bos";
+                    lvi.Selected = false;
+                }
+                if ((int)lvi.Tag == yeniMasaNo)
+                {
+                    lvi.ImageKey = "dolu";
+                    lvi.Selected = true;
+                }
+            }
         }
 
         private Siparis SiparisBulYadaOlustur(int masaNo)

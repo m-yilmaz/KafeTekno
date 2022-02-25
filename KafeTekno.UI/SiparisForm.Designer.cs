@@ -157,6 +157,7 @@
             this.btnTasi.TabIndex = 7;
             this.btnTasi.Text = "TAŞI";
             this.btnTasi.UseVisualStyleBackColor = true;
+            this.btnTasi.Click += new System.EventHandler(this.btnTasi_Click);
             // 
             // btnSiparisIptal
             // 
