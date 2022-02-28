@@ -21,7 +21,7 @@ namespace KafeTekno.UI
         {
             InitializeComponent();
             VerileriOku();
-            OrnekUrunleriYukle();
+            //OrnekUrunleriYukle();
             MasalariOlustur();
         }
 
